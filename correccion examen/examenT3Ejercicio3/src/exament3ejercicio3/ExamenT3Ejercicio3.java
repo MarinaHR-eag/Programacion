@@ -55,15 +55,19 @@ public class ExamenT3Ejercicio3 {
                 case "W":
                     fila = filaActual - 1;
                     columna = colActual;
+                    break;
                 case "A":
                     fila = filaActual;
                     columna = colActual - 1;
+                    break;
                 case "S":
                     fila = filaActual + 1;
                     columna = colActual;
+                    break;
                 case "D":
                     fila = filaActual;
                     columna = colActual + 1;
+                    break;
             }
             // una vez tenemos el movimiendo actualizado, comprobamos si es válido
             // Comprobamos si nos hemos salido del mapa
