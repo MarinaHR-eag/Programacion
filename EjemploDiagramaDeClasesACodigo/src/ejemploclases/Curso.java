@@ -117,8 +117,14 @@ public class Curso {
                 "Alumnos: " + "\n";
         
         // Añadimos todos los alumnos a la cadena 
+        // Para evitar un bucle infinito de llamadas recursivas
+        // Imprimimos solo el nombre de los alumnos
+        // En el caso de que no haya alumnos, lo indicamos
+        if(this.alumnos.length == 0){
+            cadena += "No hay alumnos matriculados todavía ";
+        }
         for(int i = 0; i<this.alumnos.length ; i++){
-            cadena += alumnos[i] + "\n";
+            cadena += alumnos[i].getNombre() + "\n";
         }
         
         return cadena;

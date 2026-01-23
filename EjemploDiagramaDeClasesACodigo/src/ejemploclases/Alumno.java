@@ -81,7 +81,7 @@ public class Alumno {
     public void setNumeroExpediente(int numExp){
         this.numeroExpediente = numExp;
     }
-    
+
     public void setCursoMatriculado(Curso curso){
         this.cursoMatriculado = curso;
     }
@@ -105,9 +105,19 @@ public class Alumno {
  
     @Override
     public String toString(){
-        return "Nombre alumno: " + this.nombre +
+        String cadena =  "Nombre alumno: " + this.nombre +
                 "\n Edad: " + this.edad +
-                "\n Numero expediente: " + this.numeroExpediente + 
-                "\n Curso: " + this.cursoMatriculado;
+                "\n Numero expediente: " + this.numeroExpediente;
+        
+        // Para evitar un bucle infinito de llamadas recursivas
+        // No usamos el toString de Curso, sino que solo imprimimos su nombre
+        // Hay que tener en cuenta que le curso puede ser nulo
+        if(this.cursoMatriculado != null){
+            cadena += "\n Curso: " + this.cursoMatriculado.getNombre();
+        }
+        else{
+            cadena += "\n Curso: no matriculado todavía";
+        }
+        return cadena;
     }
 }
