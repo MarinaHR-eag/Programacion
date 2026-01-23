@@ -123,8 +123,10 @@ public class Curso {
         if(this.alumnos.length == 0){
             cadena += "No hay alumnos matriculados todavía ";
         }
-        for(int i = 0; i<this.alumnos.length ; i++){
-            cadena += alumnos[i].getNombre() + "\n";
+        else{
+            for(int i = 0; i<this.alumnos.length ; i++){
+                cadena += alumnos[i].getNombre() + "\n";
+            }
         }
         
         return cadena;
