@@ -13,6 +13,7 @@ public abstract class Empleado {
     // Bloque atributos
     protected String nombre;
     protected double salarioBase;
+    protected Departamento departamento;
     protected static int totalEmpleados = 0;
     
     // Constructores
@@ -50,6 +51,10 @@ public abstract class Empleado {
         return totalEmpleados;
     }
     
+    public Departamento getDepartamento(){
+        return this.departamento;
+    }
+    
     // Setters
     public void setNombre(String nombre){
         this.nombre = nombre;
@@ -57,6 +62,10 @@ public abstract class Empleado {
     
     public void setSalarioBase(double salario){
         this.salarioBase = salario;
+    }
+    
+    public void setDepartamento(Departamento departamento){
+        this.departamento = departamento;
     }
     
     // No hacemos un setter del atributo totalEmpleados porque no queremos que nadie lo modifique
@@ -68,7 +77,8 @@ public abstract class Empleado {
     @Override
     public String toString(){
         String cadena = "Nombre empleado: " + this.nombre +
-                "\nSalario base: " + this.salarioBase;
+                "\nSalario base: " + this.salarioBase + 
+                "\nDepartamento: " + this.departamento.getNombre();
         return cadena;
     }
 }
