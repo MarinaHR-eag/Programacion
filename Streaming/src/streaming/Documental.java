@@ -69,7 +69,8 @@ public class Documental extends Contenido {
     public double getPuntuacionMedia(){
         return this.puntuacionMedia;
     }
-    
+   
+    @Override
     public int getDuracion(){
         return this.duracion;
     }
@@ -104,6 +105,7 @@ public class Documental extends Contenido {
     }
     
     // Metodos personalizados
+    @Override
     public double calcularValoracion(){
         double valoracion = this.puntuacionMedia;
         if(this.tematica.equals("ciencia") || this.tematica.equals("naturaleza")){

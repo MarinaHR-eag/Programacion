@@ -20,9 +20,8 @@ public class Plataforma {
         this.catalogo = new Contenido[0];
     }
     
-    public Plataforma(String nombre, Contenido[] catalogo){
+    public Plataforma(String nombre){
         this.nombre = nombre;
-        this.catalogo = catalogo;
     }
     
     public Plataforma(Plataforma p){
@@ -46,16 +45,18 @@ public class Plataforma {
     
     // Métodos personalizados    
     public void aniadirContenido(Contenido c){
-        // Creamos un nuevo array con un elemento más
-        Contenido[] nuevoArray = new Contenido[this.catalogo.length + 1];
-        // Copiamos el array que ya tenemos
-        for(int i=0; i<this.catalogo.length; i++){
-            nuevoArray[i] = this.catalogo[i];
+        if(c != null){
+            // Creamos un nuevo array con un elemento más
+            Contenido[] nuevoArray = new Contenido[this.catalogo.length + 1];
+            // Copiamos el array que ya tenemos
+            for(int i = 0; i < this.catalogo.length; i++){
+                nuevoArray[i] = this.catalogo[i];
+            }
+            // Añadimos el nuevo elemento al final
+            nuevoArray[this.catalogo.length] = c;
+            // guardar el nuevo array en el atributo
+            this.catalogo = nuevoArray;
         }
-        // Añadimos el nuevo elemento al final
-        nuevoArray[this.catalogo.length] = c;
-        // guardar el nuevo array en el atributo
-        this.catalogo = nuevoArray;
     }
     
     public int calcularDuracionTotal(){

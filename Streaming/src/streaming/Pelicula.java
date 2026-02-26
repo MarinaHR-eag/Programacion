@@ -70,6 +70,7 @@ public class Pelicula extends Contenido {
         return this.puntuacionMedia;
     }
     
+    @Override
     public int getDuracion(){
         return this.duracion;
     }
@@ -104,6 +105,7 @@ public class Pelicula extends Contenido {
     }
     
     // Metodos personalizados
+    @Override
     public double calcularValoracion(){
         double valoracion = this.puntuacionMedia;
         if(this.getAnioEstreno() >= 2020){
