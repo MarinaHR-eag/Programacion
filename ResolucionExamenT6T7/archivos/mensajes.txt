@@ -1,0 +1,5 @@
+USR=Ana | MSG=hola mundo | KEY=3
+USR=Luis | MSG=examen aprobado | KEY=2
+USR=Marta | MSG=java es facil | KEY=4
+USR=Carlos | MSG=programacion en java | KEY=5
+USR=Lucia | MSG=estudiando para el examen | KEY=2

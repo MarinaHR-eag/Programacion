@@ -1,0 +1,3 @@
+Usuario: Ana
+Mensaje cifrado: krod pxqgr
+Clave: 3

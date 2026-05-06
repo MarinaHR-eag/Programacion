@@ -1,0 +1,3 @@
+Usuario: Luis
+Mensaje cifrado: gzcogp crtqdcfq
+Clave: 2
