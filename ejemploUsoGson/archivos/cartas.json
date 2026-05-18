@@ -1,0 +1,59 @@
+{
+  "curacion": [
+    {
+      "nombre": "Poción pequeña",
+      "rareza": "comun",
+      "vida": 20
+    },
+    {
+      "nombre": "Curación divina",
+      "rareza": "epica",
+      "vida": 80
+    },
+    {
+      "nombre": "Fuente sagrada",
+      "rareza": "legendaria",
+      "vida": 150
+    }
+  ],
+  "ataque": [
+    {
+      "nombre": "Bola de fuego",
+      "rareza": "rara",
+      "danio": 40,
+      "tipoAtaque": "magico"
+    },
+    {
+      "nombre": "Rayo oscuro",
+      "rareza": "epica",
+      "danio": 70,
+      "tipoAtaque": "magico"
+    },
+    {
+      "nombre": "Golpe titánico",
+      "rareza": "legendaria",
+      "danio": 120,
+      "tipoAtaque": "fisico"
+    }
+  ],
+  "defensa": [
+    {
+      "nombre": "Escudo básico",
+      "rareza": "comun",
+      "escudo": 25,
+      "tipoDefensa": "armadura"
+    },
+    {
+      "nombre": "Barrera mágica",
+      "rareza": "epica",
+      "escudo": 100,
+      "tipoDefensa": "magica"
+    },
+    {
+      "nombre": "Caparazón de tortuga",
+      "rareza": "normal",
+      "escudo": 10,
+      "tipoDefensa": "armadura"
+    }
+  ]
+}
